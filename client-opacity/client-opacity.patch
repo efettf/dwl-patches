@@ -167,14 +167,5 @@ index 6f041a0d..83c3cd23 100644
  void
  setpsel(struct wl_listener *listener, void *data)
  {
-@@ -2997,6 +3034,7 @@ createnotifyx11(struct wl_listener *listener, void *data)
- 	c->surface.xwayland = xsurface;
- 	c->type = X11;
- 	c->bw = borderpx;
-+	c->opacity = default_opacity;
- 
- 	/* Listen to the various events it can emit */
- 	LISTEN(&xsurface->events.associate, &c->associate, associatex11);
--- 
 2.45.2
 
